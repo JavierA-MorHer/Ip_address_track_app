@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import { useMap } from 'react-leaflet/hooks'
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import Icono from '../img/icon-location.svg';
 
 export const Mapa = ({obj}) => {
    
@@ -15,8 +16,8 @@ export const Mapa = ({obj}) => {
        }
 
        const icon = new L.Icon({
-        iconUrl: 'src/img/icon-location.svg',
-        iconRetinaUrl: 'src/img/icon-location.svg',
+        iconUrl: Icono,
+        iconRetinaUrl: Icono,
         iconAnchor: null,
         popupAnchor: null,
         shadowUrl: null,
